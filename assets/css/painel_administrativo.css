@@ -1,0 +1,22 @@
+.content-box{
+    margin: 40px 0 10px 0;
+    height: 250px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+.page-wrapper h1{
+    text-align: center;
+    color: #F0F2F5;
+    margin-bottom: 30px;
+}
+
+.painel-adm a{
+    color: #F0F2F5;
+    border-bottom: 1px solid #fff;
+}

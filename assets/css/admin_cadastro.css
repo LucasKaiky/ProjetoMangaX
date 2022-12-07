@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+main {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg, #00051b, #c0c0c0);
+    padding: 50px 0px 100px 0;
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container .auth-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.container .auth-container .auth-title {
+    text-align: center;
+}
+
+.auth-title a {
+    text-decoration: none;
+}
+
+.auth-title i {
+    color: #2e2e2e;
+}
+
+.container .form {
+    padding: 30px;
+}
+
+.container .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .input-field {
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.form .descricao {
+    height: 100px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #00051b;
+}
+
+.input-field textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.input-field textarea:is(:focus, :valid) {
+    border-bottom-color: #00051b;
+}
+
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: rgb(70, 70, 70);
+    font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color: #00051b;
+}
+
+.input-field input[type="file"] {
+    margin-left: 450px;
+    z-index: -1;
+}
+
+.custom-img {
+    display: flex;
+    align-items: center;
+}
+
+.custom-img label {
+    width: 200px;
+    height: 60px;
+    background-color: #333;
+    color: #FFF;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.custom-img label i {
+    margin: 0 0 0 10px;
+    color: white;
+}
+
+.form .forgotpass-text {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #161616;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input {
+    background-color: #265df2;
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form .custom-select {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 150px;
+    border: none;
+    font-size: 14px;
+}
+
+.form .error {
+    color: red;
+}

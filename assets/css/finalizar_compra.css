@@ -1,0 +1,27 @@
+.container {
+    background-image: url(../img/backgrounds/luffy-wano.gif);
+    max-width: 600px;
+    height: 360px;
+}
+
+.gray-div {
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 100%;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+
+.title {
+    font-weight: 500;
+}
+
+.back-href {
+    padding: 100px;
+}
+
+.back-href a {
+    color: white;
+    text-decoration: none;
+}

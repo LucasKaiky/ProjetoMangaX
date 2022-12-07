@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #00051b, #c0c0c0);
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.container .auth-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.container .auth-container .auth-title {
+    text-align: center;
+}
+
+.auth-title a {
+    text-decoration: none;
+}
+
+.auth-title i {
+    color: #2e2e2e;
+}
+
+.container .form {
+    padding: 30px;
+}
+
+.container .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .input-field {
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #00051b;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: rgb(70, 70, 70);
+    font-size: 23px;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+    color: #00051b;
+}
+
+.form .forgotpass-text {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.buttonS:is(:focus, :valid) ~ i {
+    color: #00051b;
+}
+
+.buttonS{
+    margin-top: 10px;
+}
+
+.buttonS {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+}
+
+.button input {
+    background-color: #265df2;
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.erro {
+    color: rgb(190, 0, 0);
+}
+
+.loader{
+    position: absolute;
+    top: 9px;
+    left: 80%;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    pointer-events: none;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: an1 1s ease infinite;
+}
+
+@keyframes an1{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}

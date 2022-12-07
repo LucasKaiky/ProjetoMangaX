@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #F0F2F5;
+	position: relative;
+	margin: 0;
+	min-height: 100vh;
+	padding-bottom: 6.74rem;
+}
+
+main{
+	margin-bottom: 90px;
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.content-box {
+	width: 1200px;
+}

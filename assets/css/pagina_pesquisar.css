@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    color: #000;
+}
+
+body{
+    background-color: #F0F2F5;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.content-box {
+    width: 1200px;
+}
+
+.content-box h1{
+    text-align: center;
+    color: #161616;
+    font-size: 32px;
+    font-family: 'Anton', sans-serif;
+}
+
+.section-destaques{
+    padding: 20px 40px;
+}
+
+#destaques{
+    text-align: center;
+}
+
+#destaques .container-produto{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    
+
+}
+
+#destaques .produto{
+    
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 8px;
+    text-align: center;
+    transition: all 500ms ease-in-out; 
+    align-content: center;
+    align-self: normal;
+
+}
+
+#destaques .produto::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+}
+
+
+
+#destaques .produto img{
+    width: 100%;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+
+}
+
+#destaques .produto .informaçao-produto span{
+    color: #161616;
+    font-size: 22px;
+    font-family: 'Anton', sans-serif;
+}
+
+#destaques .produto .informaçao-produto h4{
+    font-size: 20px;
+}
+
+#destaques .produto .fa-cart-shopping{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #E5D5A7;
+    color: #5A574F;
+}
+
+.bnt{
+   position: relative;
+	padding: 10px 25px;
+	background: #f48c06;
+	color: #fff;
+	text-decoration: none;
+	margin-top: 25px;
+	border-radius: 25px;
+    align-items: center;
+    justify-content: center;
+    font-size: medium;
+    outline: none;
+    border: 1px solid #f48c06;
+    transition: background 1s;
+    cursor: pointer;
+    align-self: center;
+}
+}
+
+.bnt:hover{
+   background: #e85d04;
+}    
+
+
+
+

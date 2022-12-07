@@ -1,0 +1,87 @@
+main {
+    background: linear-gradient(45deg, #00051b, #c0c0c0);
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    display: grid;
+    place-items: center;
+    height: auto;
+}
+
+.container{
+    width: 1000px;
+    padding: 30px;
+    margin: 30px 0;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.top a {
+    text-decoration: none;
+}
+
+.top i {
+    color: #2e2e2e;
+}
+
+.title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.desc-title {
+    margin-left: 30px;
+}
+
+.content .vendas {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.content .vendas .action {
+    width: 400px;
+    color: #fff;
+    margin: 20px;
+}
+
+.content .vendas .action i {
+    color: #927e51;
+    font-size: 30px;
+}
+
+.action .thead {
+    background-color: #927e51;
+    padding: 5px 10px;
+}
+
+.action .tbody {
+    background-color: #161616;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+.info-produtos {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.info-produtos .left {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: flex-start;
+}
+
+.info-produtos .left .pedido-content {
+    margin-left: 20px;
+}

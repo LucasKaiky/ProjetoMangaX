@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+/* principal*/
+footer{
+    background: #161616;
+    height: auto;
+    padding-top: 20px;
+    margin-top: 20px;
+    color: #b4AD9D;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+/* letra*/
+.footer-names{
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+}
+
+#footer-name1{
+    font-family: 'Caveat', cursive;
+    color: #B4AD9D;
+}
+
+#footer-name2{
+    font-family: 'Caveat', cursive;
+    color: #E5D5A7;
+}
+.footer-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/*content*/
+.footer-content{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 8px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #F0F2F5;
+}
+
+/*social media*/
+.footer-social-media{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.footer-social-media li{
+    margin: 0 10px;
+}
+.footer-social-media a{
+    text-decoration: none;
+    color: #F0F2F5;
+}
+.footer-social-media a i{
+    font-size: 1 rem;
+    color: #F0F2F5;
+}
+.footer-end p{
+    color: #F0F2F5;
+}

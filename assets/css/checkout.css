@@ -1,0 +1,64 @@
+body {
+    height: auto;
+}
+
+main {
+    background: linear-gradient(45deg, #00051b, #c0c0c0);
+}
+
+.total {
+    color: rgb(180, 90, 16);
+}
+
+.infos {
+    margin: 0 0 20px 20px;
+}
+
+.form button {
+	border: none;
+	outline: none;
+	padding: 0.8em 5em;
+	width: 60%;
+	margin: 20px 0 10px 0;
+	font-size: 20px;
+	position: relative;
+	box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+	background-color: #f48c06;
+	color: #fff;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.checkout button {
+	background-color: #e85d04;
+	transition: 0.4s;
+}
+
+.checkout .entrega-gratis {
+	font-weight: bold;
+    color: rgb(30, 139, 8);
+}
+
+.loader{
+    position: absolute;
+    top: 9px;
+    left: 80%;
+    width: 1vw;
+    height: 1vw;
+    display: flex;
+    pointer-events: none;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: an1 1.5s ease infinite;
+}
+
+@keyframes an1{
+    0%{
+        transform: rotate(0turn);
+    }
+    100%{
+        transform: rotate(1turn);
+    }
+}

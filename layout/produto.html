@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="../assets/css/paginaProduto.css" />
+		<link rel="stylesheet" href="../assets/css/body.css" />
+		<script
+			src="https://kit.fontawesome.com/682b28ed24.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="showCase">
+				<img
+					src="../assets/img/mangas/op100.jpg"
+					alt="product-img"
+					id="currentImg"
+					height="520px" />
+			</div>
+			<div class="contentCase">
+				<span class="author">Eichiiro Oda</span>
+				<h1 class="product">One Piece Vol. 100</h1>
+				<label for="price" class="price">Preço:</label>
+				<span class="price"> R$125.00 </span><br />
+				<div class="counter">
+					<div class="button-container">
+						<button class="decrease" onclick="decreaseValue()">
+							<i class="fa fa-minus"></i>
+						</button>
+					</div>
+					<input
+						class="quantity-product"
+						min="0"
+						max="99"
+						name="quantity"
+						value="1"
+						type="number"
+						id="quantity"
+						disabled />
+					<div class="button-container">
+						<button class="increase" onclick="incrementValue()">
+							<i class="fa fa-plus"></i>
+						</button>
+					</div>
+				</div>
+				<br />
+				<button class="a2c" id="addtocart">Adicionar ao carrinho</button
+				><br />
+				<button class="a2l" id="addtocart">
+					<i class="fa-solid fa-bookmark"></i>Adicionar a lista
+				</button>
+				<h4>Informações do produto</h4>
+				<hr />
+				<p class="details">
+					Com todas as estrelas reunidas no topo da fortaleza, Luffy e os
+					Piratas da Nova Geração desafiam Kaido e Big Mom! Será que há
+					alguma chance de vitória contra essa aliança formada entre os
+					dois mais poderosos piratas dos mares?! O que o futuro reserva
+					para essa batalha extrema que está fazendo toda Onigashima
+					tremer?!
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	function incrementValue() {
+		var value = parseInt(document.getElementById('quantity').value, 10);
+		value = isNaN(value) ? 0 : value;
+		value++;
+		document.getElementById('quantity').value = value;
+	}
+
+	function decreaseValue() {
+		var value = parseInt(document.getElementById('quantity').value, 10);
+		value = isNaN(value) ? 0 : value;
+		if (value > 0) {
+			value--;
+			document.getElementById('quantity').value = value;
+		}
+	}
+</script>
